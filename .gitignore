@@ -130,4 +130,5 @@ dmypy.json
 
 
 tmp/
+etc/google-cloud/*.json
 
