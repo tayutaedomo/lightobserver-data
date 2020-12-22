@@ -26,3 +26,13 @@ $ ls /dev/ | grep video0
 video0
 ```
 
+
+## crontab
+```
+LIGHTOBSERVER_ROOT=<Root directory path>
+LIGHTOBSERVER_GCS_CREDENTIALS=<Credentials file name>
+LIGHTOBSERVER_GCS_PROJECT=<Project ID>
+LIGHTOBSERVER_GCS_BUCKET=<Bucket name>
+30 * * * * $LIGHTOBSERVER_ROOT/scripts/upload_image.py > /dev/null 2>&1
+```
+
