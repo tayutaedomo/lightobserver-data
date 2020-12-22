@@ -1,7 +1,7 @@
 import cv2
 
 
-def write_capture_image(dest_path):
+def capture_image(dest_path):
     cap = cv2.VideoCapture(0)
 
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
@@ -16,5 +16,5 @@ def write_capture_image(dest_path):
 
 
 if __name__ == '__main__':
-    write_capture_image('a.jpg')
+    capture_image('camera.jpg')
 
